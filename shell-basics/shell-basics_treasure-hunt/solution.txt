@@ -1,0 +1,16 @@
+
+/*-----------------------------------------------------------------------------mk--
+| Treasure Hunt
+|----------------------------------------------------------------------------------
+| Der Weg zum Ziel
+*/
+
+shell-basics_treasure-hunt/
+    treasure-island/forest/
+    deep-forest/
+    very-deep-forest/
+    ruins/
+    temple/
+    .secret-door/
+    tunnel/
+    chest.md
