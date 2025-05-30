@@ -1,0 +1,17 @@
+
+/*-----------------------------------------------------------------------------mk--
+| Notes Project
+|----------------------------------------------------------------------------------
+| Erstellt wurde der Ordner notes auf der Kommandozeile mit
+| elementaren git-bash-Befehlen.
+|
+| Um die Verzeichnisstruktur von notes gemäß der Aufgenbenstellung
+| zu transformieren, führe sukzessive nach folgende cli-Befehle aus.
+*/
+
+cd ~/web-bootcamp/web-challenges/shell-basics/notes
+mv unreleased/private .
+mv released/public .
+rm public/trash.txt
+mv released public
+mv unreleased public
