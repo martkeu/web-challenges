@@ -1,4 +1,4 @@
-# CSS Basics: Pink Box
+    # CSS Basics: Pink Box
 
 Let's get started with CSS! In this challenge, you will create a pink box.
 
