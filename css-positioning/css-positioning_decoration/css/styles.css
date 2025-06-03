@@ -34,6 +34,8 @@ Hint: The z-index can also be negative!
   color: rgb(28, 33, 56);
   padding: 24px 32px;
   border-radius: 12px;
+
+  position: relative;
 }
 
 .blob-1 {
@@ -42,6 +44,11 @@ Hint: The z-index can also be negative!
   background: linear-gradient(to bottom left, #f6997d, #ff4a11, #943215);
   border-radius: 16px;
   rotate: -15deg;
+
+  position: relative;
+  top: 0px;
+  left: -200px;
+  z-index: -10
 }
 
 .blob-2 {
@@ -56,4 +63,9 @@ Hint: The z-index can also be negative!
   );
   border-radius: 999px;
   rotate: 280deg;
+
+  position: relative;
+  top: 0px;
+  left: -200px;
+  z-index: -100
 }
