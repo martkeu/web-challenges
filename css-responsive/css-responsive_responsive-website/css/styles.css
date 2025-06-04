@@ -241,9 +241,49 @@ CSS based on conditions such as viewport width, etc. */
 /* Media Query Tablet */
 /* --- */
 /* Replace this comment with your media query. */
+@media screen and (min-width: 600px) {
+    .card-section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
 /* --- */
 
 /* Media Query Desktop */
 /* --- */
 /* Replace this comment with your media query. */
+@media screen and (min-width: 1024px) {
+    .card-section {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .--forest {
+        grid-column: 1 / -1;
+    }
+
+    .intro-text {
+        grid-column: 1 / 3;
+    }
+
+    .--mountain {
+        grid-column: 3 / 5;
+    }
+
+    .--river {
+        grid-column: 1 / 3;
+    }
+    
+     .--ocean {
+        grid-column: 3 / 5;
+    } 
+
+    .--desert {
+        grid-column: 2 / 4;
+    }
+
+    .product-card {
+        width: 100%;
+    }
+}
 /* --- */
