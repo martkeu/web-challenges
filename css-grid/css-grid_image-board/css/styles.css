@@ -18,6 +18,11 @@ body {
   gap: 1rem;
   padding: 1rem;
   /* Add styles here */
+  grid-template-areas: 
+  "banana pineapple melon"
+  "apple pineapple cauliflower"
+  "apple tom cauliflower";
+  
 }
 
 .image-board__image {
@@ -30,24 +35,30 @@ body {
 
 .image-board__image--1 {
   /* Add styles here */
+  grid-area: banana;
 }
 
 .image-board__image--2 {
   /* Add styles here */
+  grid-area: apple;
 }
 
 .image-board__image--3 {
   /* Add styles here */
+  grid-area: melon;
 }
 
 .image-board__image--4 {
   /* Add styles here */
+  grid-area: pineapple;
 }
 
 .image-board__image--5 {
   /* Add styles here */
+  grid-area: tom;
 }
 
 .image-board__image--6 {
   /* Add styles here */
+  grid-area: cauliflower;
 }
