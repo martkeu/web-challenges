@@ -10,6 +10,7 @@
     <title>Playground</title>
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
+
   <body>
     <main>
       <h1>Let's play!</h1>
@@ -22,6 +23,7 @@
           </p>
           <div class="box box--one">🫐</div>
         </section>
+
         <section class="section">
           <h3>Part 2</h3>
           <p>
@@ -31,6 +33,7 @@
           </p>
           <div class="box box--two">🍏</div>
         </section>
+
         <section class="section">
           <h3>Part 3</h3>
           <p>
@@ -38,6 +41,7 @@
           </p>
           <div class="box box--three">🍉</div>
         </section>
+
         <section class="section">
           <h3>Part 4</h3>
           <p>
@@ -56,8 +60,12 @@
           </p>
           <div class="box box--five">
             <!-- You might want to use the <picture> element here. -->
-            <img src="./img/cat_small.jpg" alt="A cat" />
-          </div>
+            <picture>                    
+                <source media="(min-width: 650px)" srcset="./img/cat_large.jpg">
+                <source media="(min-width: 465px)" srcset="./img/cat_medium.jpg">
+                <img src="./img/cat_small.jpg" alt="A cat" />
+            </picture>
+        </div>
         </section>
       </section>
     </main>
