@@ -1,0 +1,72 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --border-curve: 7px;
+    --padding-prim: 1em;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.7rem;
+    max-width: 1000px;
+    padding: var(--padding-prim);
+    margin: auto;
+    background-color: rgb(107, 105, 123);
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    column-gap: 0.7rem;
+    padding: var(--padding-prim);
+    border-radius: var(--border-curve);
+    background-color: rgb(232, 229, 79);
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.7rem;
+    width: 70%;
+}
+.aside-content {
+    width: 30%;
+    padding: var(--padding-prim);
+    border-radius: var(--border-curve);
+    background-color: rgb(54, 146, 188);
+}
+
+header {
+    padding: var(--padding-prim);
+    border-radius: var(--border-curve);
+    color: white;
+    background-color: rgb(236, 60, 125);
+}
+
+footer {
+    padding: var(--padding-prim);
+    border-radius: var(--border-curve);
+    color: white;
+    background-color: rgb(58, 5, 143);
+}
+
+section {
+    padding: var(--padding-prim);
+    border-radius: var(--border-curve);
+    color: rgb(69, 69, 69);
+    background-color: rgb(41, 185, 151);
+}
+
+section:first-child {
+    padding: var(--padding-prim);
+    border-radius: var(--border-curve);
+    color: white;
+    background-color: rgb(41, 70, 185);
+}
