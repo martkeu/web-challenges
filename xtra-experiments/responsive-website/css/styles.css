@@ -243,12 +243,6 @@ CSS based on conditions such as viewport width, etc. */
 /* Replace this comment with your media query. */
 @media screen and (min-width: 600px) {
     .card-section {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-}
-@media screen and (min-width: 600px) {
-    .card-section {
         display: flex;
         flex-flow: row wrap;
         justify-content: space-around;
