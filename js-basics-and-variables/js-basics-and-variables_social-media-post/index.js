@@ -8,15 +8,20 @@ console.clear();
 	- the user who created the post
 	- a boolean called `isReported` to indicate whether the post has been reported
 */
-
-// --v-- write your code here --v--
-
-// --^-- write your code here --^--
+const title = 'JavaScript and The Varaible const';
+const content = 'I have nothing to say about this subject.';
+let likes = 9;
+const author = 'John Doe';
+const isReported = false;
 
 /*
 2. Log all variables to the console. Then increase the number of likes by one and log the updated like count. Modify your code from step 1 if necessary.
 */
+console.log(title);
+console.log(content);
+console.log(likes);
+console.log(author);
+console.log(isReported);
 
-// --v-- write your code here --v--
 
-// --^-- write your code here --^--
+console.log(++likes);
