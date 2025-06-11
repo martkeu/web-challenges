@@ -34,7 +34,7 @@ For each operation (add, subtract, multiply, divide, exponent, and modulo):
 // 	console.log(result);
 // });
 
-btnAdd.addEventListener('click', g() => console.log(operand1 + operand2));
+btnAdd.addEventListener('click', () => console.log(operand1 + operand2));
 btnSubtract.addEventListener('click', () => console.log(operand1 - operand2));
 btnMuliply.addEventListener('click', () => console.log(operand1 * operand2));
 btnDivide.addEventListener('click', () => console.log(operand1 / operand2));
