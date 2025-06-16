@@ -9,5 +9,58 @@
     <title>Personal Profile Form</title>
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
-  <body></body>
+
+  <body>
+    <form>
+      <h2>Persönliche Daten</h2>
+
+      <fieldset>
+        <legend>Persönliche Informationen</legend>
+
+        <div>
+          <label for="firstname">Ihr Vorname</label>
+          <input
+            type="text"
+            id="firstname"
+            name="firstname"
+            autofocus
+            required
+          />
+        </div>
+        <div>
+          <label for="lastname">Ihr Nachname</label>
+          <input type="text" id="lastname" name="lastname" required />
+        </div>
+        <div>
+          <label for="email">Ihre E-Mail</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div>
+          <label for="date">Ihr Geburstag</label>
+          <input type="date" id="date" name="date" />
+        </div>
+      </fieldset>
+
+      <h2>Weitere persönliche Daten</h2>
+
+      <fieldset>
+        <legend>Weitere Informationen</legend>
+        
+        <div>
+          <label for="color">Ihre Lieblingsfarbe</label>
+          <input type="color" id="color" name="color" value="#E5430F" />
+        </div>
+
+        <label for="color">Ihr Lieblingstier</label>
+        <select name="pet" id="pet">
+          <option value="rat">Ratte</option>
+          <option value="spider">Spinne</option>
+          <option value="snake">Schlange</option>
+          <option value="kockroach">Kakerlake</option>
+        </select>
+      </fieldset>
+
+      <button type="submit">Senden</button>
+    </form>
+  </body>
 </html>
