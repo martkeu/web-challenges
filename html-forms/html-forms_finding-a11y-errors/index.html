@@ -9,6 +9,7 @@
     <title>Forms and A11y</title>
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
+
   <body>
     <h1 class="title">Understanding A11y in Forms</h1>
     <p id="description">
@@ -16,15 +17,30 @@
     </p>
 
     <form for="title">
-      <fieldset>
+      <fieldset aria-labelledby="title">
         <legend>Enter your information</legend>
-        <label>Name:</label>
+
+        <label for="name-Input">Name:</label>
         <input id="name-Input" type="text" />
-        <label>Age:</label>
+
+        <label for="age-Input">Age:</label>
         <input id="age-Input" type="text" />
-        <label>Color you cannot see:</label>
+
+        <label for="color-Input">Color you cannot see:</label>
         <input id="color-Input" type="color" />
-        <textarea rows="7" placeholder="Leave us a message..."></textarea>
+
+        <!-- <label for="message">Your message:</label>
+        <textarea id="message" rows="7" placeholder="Leave us a message..."></textarea> -->
+        <label for="message" aria-describedby="description"
+          >Your message:</label
+        >
+        <textarea
+          id="message"
+          rows="7"
+        ></textarea>
+
+        <p id="description">Hinterlasse eine Nachricht.</p>
+
         <button type="submit">Submit</button>
       </fieldset>
     </form>
