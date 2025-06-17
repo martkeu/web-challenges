@@ -18,9 +18,6 @@ form.addEventListener('submit', (event) => {
     const orderDate = formElements.orderDate.value;
     const tos = formElements.tos.value;
 
-    form.reset();   
-    firstNameField.focus();
-
     console.log({
         firstName,
         lastName,
@@ -33,6 +30,20 @@ form.addEventListener('submit', (event) => {
         tos
     });
 
-    console.log(`The age-badness-sum of ${firstName} is ${Number(age) + Number(badness)}.`);
-});
+    form.reset();
+    firstNameField.focus();
 
+    console.log(`The age-badness-sum of ${firstName} is ${Number(age) + Number(badness)}.`);
+
+
+    /*-----------------------------------------------------------------------------mk--
+    | Alternativ
+    |----------------------------------------------------------------------------------
+    | 
+    */
+    // const formData = new FormData(event.target);
+    // const data = Object.fromEntries(formData);
+
+    // console.log(data);
+    // console.log(`The age-badness-sum of ${data.firstName} is ${Number(data.age) + Number(data.badness)}.`);
+});
