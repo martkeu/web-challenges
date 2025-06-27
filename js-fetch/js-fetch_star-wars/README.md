@@ -21,8 +21,8 @@ Use an array method to create and render a card for each object in the fetched d
 
 The following hints may guide you:
 
-- What was the array method again to perform an action **for each** element?
-- You can use the functions `Card()` and `renderElement()` to create those cards, see the explanation above!
+-   What was the array method again to perform an action **for each** element?
+-   You can use the functions `Card()` and `renderElement()` to create those cards, see the explanation above!
 
 Please switch to the [`js/index.js`](./js/index.js) file to start counting!
 
@@ -32,7 +32,7 @@ To run project commands locally, you need to install the dependencies using `npm
 
 You can then use the following command:
 
-- `npm run lint` to run the linter
+-   `npm run lint` to run the linter
 
 Use the Live Preview Extension for Visual Studio Code to view this project in the browser.  
 Select the HTML file you want to view, press <kbd>⇧</kbd><kbd>⌘</kbd><kbd>P</kbd>, search for `Live Preview: Show Preview` and confirm with <kbd>Enter</kbd>.
