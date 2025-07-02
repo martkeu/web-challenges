@@ -10,3 +10,23 @@ body {
   display: flex;
   justify-content: center;
 }
+
+
+/*-----------------------------------------------------------------------------mk--
+| 
+|----------------------------------------------------------------------------------
+| 
+*/
+button {
+    padding: 1em 2em;
+    margin: 1em;
+    border-radius: 7px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+button:disabled {
+    cursor: not-allowed;
+}
