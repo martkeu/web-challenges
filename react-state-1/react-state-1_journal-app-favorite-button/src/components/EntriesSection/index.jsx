@@ -25,7 +25,7 @@ export default function EntriesSection() {
 				/>
 				<Divider />
 				<Entry
-					date="Feb 26, 2028"
+					date={new Date().toLocaleDateString("de-DE", {month: "long", day: "numeric", year: "numeric"})}
 					motto="Thats life in the city"
 					notes="Si sine causa? quae fuerit causa, mox videro; interea hoc tenebo, si mihi. Et quidem se repellere, idque instituit docere sic omne animal, simul atque."
 				/>
