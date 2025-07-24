@@ -17,3 +17,21 @@ export default function Card({ id, name, height, eyeColor, birthYear }) {
     </StyledCard>
   );
 }
+
+// export default function Card({ id, character }) {
+//   return (
+//     <StyledCard>
+//       <h1>Name: {character.name}</h1>
+//       <DescriptionList>
+//         <dt>ID:</dt>
+//         <dd>{id}</dd>
+//         <dt>Height:</dt>
+//         <dd>{character.height}</dd>
+//         <dt>Eye Color:</dt>
+//         <dd>{character.eyeColor}</dd>
+//         <dt>Birth Year:</dt>
+//         <dd>{character.birthYear}</dd>
+//       </DescriptionList>
+//     </StyledCard>
+//   );
+// }
