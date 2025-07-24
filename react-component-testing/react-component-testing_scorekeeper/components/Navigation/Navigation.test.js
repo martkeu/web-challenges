@@ -7,4 +7,13 @@ jest.mock("next/router", () => ({
   },
 }));
 
-test("renders with two links 'Play' and 'History'", () => {});
+test("renders with two links 'Play' and 'History'", () => {
+   render(<Navigation />);
+   
+   const play = screen.getByRole("link", { name: "Play" });
+   const history = screen.getByRole("link", { name: "History" });
+   
+   expect(play).toBeInTheDocument();
+   expect(history).toBeInTheDocument();
+});
+

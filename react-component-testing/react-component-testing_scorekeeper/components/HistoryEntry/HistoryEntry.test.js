@@ -2,7 +2,8 @@ import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import HistoryEntry from ".";
 
-test.skip("renders name of game and 'show score' button only", () => {
+// test.skip("renders name of game and 'show score' button only", () => {
+test("renders name of game and 'show score' button only", () => {
   render(
     <HistoryEntry
       nameOfGame="Dodelido"
@@ -13,6 +14,7 @@ test.skip("renders name of game and 'show score' button only", () => {
     />
   );
 
+  //mk - change button label to 'Show score' in index.js!!
   const nameOfGame = screen.getByText(/dodelido/i);
   const button = screen.getByRole("button", { name: /show score/i });
 
@@ -20,7 +22,8 @@ test.skip("renders name of game and 'show score' button only", () => {
   expect(button).toBeInTheDocument();
 });
 
-test.skip("renders player names and scores after button click", async () => {
+// test.skip("renders player names and scores after button click", async () => {
+test("renders player names and scores after button click", async () => {
   render(
     <HistoryEntry
       nameOfGame="Dodelido"
